@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MathСalculatorAnin.Operators
+﻿namespace MathСalculatorAnin.Operators
 {
-    internal class MultiplicationOperator
+    public class MultiplicationOperator : IOperator
     {
+        public int Precedence => 2;
+
+        public double Calculate(double left, double right) => left * right;
     }
 }

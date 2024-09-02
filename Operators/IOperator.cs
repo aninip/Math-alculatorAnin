@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MathСalculatorAnin.Operators
+﻿namespace MathСalculatorAnin.Operators
 {
-    internal interface IOperator
+    public interface IOperator
     {
+        int Precedence { get; }
+        double Calculate(double left, double right);
     }
 }
