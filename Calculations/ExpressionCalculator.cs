@@ -26,6 +26,7 @@ namespace MathCalculatorAnin.Calculations
         /// <param name="tokens">Список строковых токенов, представляющих математическое выражение.</param>
         /// <returns>Результат вычисления выражения.</returns>
         /// <exception cref="ArgumentException">Вызывается, если список токенов пуст или равен null.</exception>
+        /// <exception cref="FormatException">Вызывается, если выражение содержит ошибки.</exception>
         /// <exception cref="KeyNotFoundException">Вызывается, если найден неизвестный оператор или символ.</exception>
         public double Calculate(List<string> tokens)
         {
