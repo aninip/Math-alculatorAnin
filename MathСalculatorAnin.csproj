@@ -48,6 +48,7 @@
     <Compile Include="Operators\DivisionOperator.cs" />
     <Compile Include="Operators\IOperator.cs" />
     <Compile Include="Operators\MultiplicationOperator.cs" />
+    <Compile Include="Operators\PowerOperator.cs" />
     <Compile Include="Operators\SubtractionOperator.cs" />
     <Compile Include="Parsers\ExpressionParser.cs" />
     <Compile Include="Program.cs" />

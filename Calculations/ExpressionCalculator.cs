@@ -15,8 +15,15 @@ namespace MathCalculatorAnin.Calculations
                 { "+", new AdditionOperator() },
                 { "-", new SubtractionOperator() },
                 { "*", new MultiplicationOperator() },
-                { "/", new DivisionOperator() }
+                { "/", new DivisionOperator() },
             };
+        }
+        public void AddOperator(IOperator op)
+        {
+            if (!operators.ContainsKey(op.Symbol))
+            {
+                operators.Add(op.Symbol, op);
+            }
         }
 
         /// <summary>

@@ -4,5 +4,6 @@
     {
         int Precedence { get; }
         double Calculate(double left, double right);
+        string Symbol { get; }
     }
 }

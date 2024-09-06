@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MathCalculatorAnin.Calculations;
 using MathCalculatorAnin.Parsers;
+using MathСalculatorAnin.Operators;
 
 namespace MathСalculatorAnin
 {
@@ -12,6 +13,8 @@ namespace MathСalculatorAnin
             var calculator = new ExpressionCalculator();
             var parser = new ExpressionParser();
             Console.WriteLine("Добро пожаловать в калькулятор! Введите математическое выражение или 'exit' для выхода.");
+
+            calculator.AddOperator(new PowerOperator()); // Возможность гибко добавить новые операторы при необходимости.
 
             while (true)
             {
